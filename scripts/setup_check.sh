@@ -14,9 +14,13 @@ echo 'Loop starts here'
 for i in git python3 pip3 ros2; do
 	if command -v $i &>/dev/null; then
 		echo "$i, [OK]"
-	else echo "$i, [MISSING]"
+		echo " "
+	else
+		 echo "$i, [MISSING]"
+		 echo " "
 	fi
 done
+echo "***********"
 echo 'Checking disk space now'
 
 
